@@ -24,7 +24,6 @@ final class AnimationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        animation = Animation.randomAnimation()
         animateButton.setTitle("\(animation.preset)", for: .normal)
     }
 
