@@ -9,22 +9,26 @@
 /* Begin PBXBuildFile section */
 		CE74D00529C44D2700E91B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74D00429C44D2700E91B99 /* AppDelegate.swift */; };
 		CE74D00729C44D2700E91B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74D00629C44D2700E91B99 /* SceneDelegate.swift */; };
-		CE74D00929C44D2700E91B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74D00829C44D2700E91B99 /* ViewController.swift */; };
+		CE74D00929C44D2700E91B99 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74D00829C44D2700E91B99 /* AnimationViewController.swift */; };
 		CE74D00C29C44D2700E91B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE74D00A29C44D2700E91B99 /* Main.storyboard */; };
 		CE74D00E29C44D2700E91B99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE74D00D29C44D2700E91B99 /* Assets.xcassets */; };
 		CE74D01129C44D2700E91B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE74D00F29C44D2700E91B99 /* LaunchScreen.storyboard */; };
 		CE74D01B29C44D8600E91B99 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = CE74D01A29C44D8600E91B99 /* SpringAnimation */; };
+		CEB8E62C29C5F4B800E9B354 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8E62B29C5F4B800E9B354 /* Model.swift */; };
+		CEB8E62F29C5F4D100E9B354 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8E62E29C5F4D100E9B354 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE74D00129C44D2700E91B99 /* SpringAnimation 3.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpringAnimation 3.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE74D00429C44D2700E91B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE74D00629C44D2700E91B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE74D00829C44D2700E91B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE74D00829C44D2700E91B99 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		CE74D00B29C44D2700E91B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE74D00D29C44D2700E91B99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE74D01029C44D2700E91B99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE74D01229C44D2700E91B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB8E62B29C5F4B800E9B354 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CEB8E62E29C5F4D100E9B354 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +63,12 @@
 		CE74D00329C44D2700E91B99 /* SpringAnimation 3.1 */ = {
 			isa = PBXGroup;
 			children = (
-				CE74D00429C44D2700E91B99 /* AppDelegate.swift */,
-				CE74D00629C44D2700E91B99 /* SceneDelegate.swift */,
-				CE74D00829C44D2700E91B99 /* ViewController.swift */,
-				CE74D00A29C44D2700E91B99 /* Main.storyboard */,
+				CEB8E62D29C5F4BD00E9B354 /* DataStore */,
+				CEB8E62A29C5F49700E9B354 /* Model */,
+				CEB8E62729C5F34B00E9B354 /* App */,
+				CEB8E62929C5F38600E9B354 /* ViewController */,
+				CEB8E62829C5F37100E9B354 /* StoryBoards */,
 				CE74D00D29C44D2700E91B99 /* Assets.xcassets */,
-				CE74D00F29C44D2700E91B99 /* LaunchScreen.storyboard */,
-				CE74D01229C44D2700E91B99 /* Info.plist */,
 			);
 			path = "SpringAnimation 3.1";
 			sourceTree = "<group>";
@@ -75,6 +78,49 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEB8E62729C5F34B00E9B354 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE74D00429C44D2700E91B99 /* AppDelegate.swift */,
+				CE74D00629C44D2700E91B99 /* SceneDelegate.swift */,
+				CE74D01229C44D2700E91B99 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEB8E62829C5F37100E9B354 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CE74D00A29C44D2700E91B99 /* Main.storyboard */,
+				CE74D00F29C44D2700E91B99 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CEB8E62929C5F38600E9B354 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE74D00829C44D2700E91B99 /* AnimationViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEB8E62A29C5F49700E9B354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB8E62B29C5F4B800E9B354 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB8E62D29C5F4BD00E9B354 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				CEB8E62E29C5F4D100E9B354 /* DataStore.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE74D00929C44D2700E91B99 /* ViewController.swift in Sources */,
+				CE74D00929C44D2700E91B99 /* AnimationViewController.swift in Sources */,
 				CE74D00529C44D2700E91B99 /* AppDelegate.swift in Sources */,
 				CE74D00729C44D2700E91B99 /* SceneDelegate.swift in Sources */,
+				CEB8E62F29C5F4D100E9B354 /* DataStore.swift in Sources */,
+				CEB8E62C29C5F4B800E9B354 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SpringAnimation 3.1/Info.plist";
+				INFOPLIST_FILE = "SpringAnimation 3.1/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SpringAnimation 3.1/Info.plist";
+				INFOPLIST_FILE = "SpringAnimation 3.1/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
